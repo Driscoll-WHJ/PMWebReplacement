@@ -18,11 +18,13 @@
   
   <script setup>
   import { ref } from 'vue';
+  import { useRouter } from 'vue-router';
   import axios from 'axios';
-  
+
   const email = ref('');
   const password = ref('');
   const errorMessage = ref('');
+  const router=useRouter();
   
   async function loginHandler() {
     try {
@@ -38,10 +40,11 @@
       );
   
       console.log('Login successful', response.data);
-  
+      router.push('/dashboard');
     } catch (error) {
       errorMessage.value = 'Login failed. Please check your credentials.';
       console.error(error);
+      router.push('/dashboard') // Temporary
     }
   }
   </script>

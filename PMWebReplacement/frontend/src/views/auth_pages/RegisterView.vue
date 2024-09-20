@@ -22,6 +22,7 @@
   
   <script setup>
   import { ref } from 'vue';
+  import { useRouter } from 'vue-router';
   import axios from 'axios';
   
   const email = ref('');
@@ -47,6 +48,7 @@
         }
       );
       console.log('Registration successful', response.data);
+      router.push('/dashboard');
     } catch (error) {
       errorMessage.value = 'Registration failed. Please try again.';
       console.error(error);
