@@ -15,6 +15,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to ="Login">Login</RouterLink>
         <RouterLink to ="Register">Register</RouterLink>
+        <!-- Should be a protected route -->
+        <RouterLink to="Dashboard">Dashboard</RouterLink>
       </nav>
     </div>
   </header>
