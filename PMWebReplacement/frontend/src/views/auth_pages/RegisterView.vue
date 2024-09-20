@@ -57,7 +57,7 @@
 
 <style scoped>
 .registration-container {
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
@@ -74,7 +74,7 @@ label {
 }
 
 input {
-  width: 100%;
+  width: 50%;
   padding: 8px;
   box-sizing: border-box;
 }
