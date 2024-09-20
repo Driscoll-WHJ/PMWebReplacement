@@ -11,8 +11,8 @@
   // Function to fetch project data
   function getProjectData() {
     try {
-        const response = axios.post(url);
-        data = response;
+        const response = axios.get(url);
+        data.value = response.data;
     } catch(err){
         console.error(err);
     }
